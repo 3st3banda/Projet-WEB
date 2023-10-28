@@ -1,0 +1,80 @@
+﻿/* Construction */
+
+article{
+    border: solid;
+    border-color: purple;
+}
+
+
+/* Code */
+
+
+img {
+    width: 50%;
+    height: 40%;
+    border-radius: 25% 10%;
+}
+
+h2 {
+    margin: 5% auto 5% auto;
+    width: fit-content;
+    border-bottom: 1px solid crimson;
+}
+
+
+#MapsDescribe, article{
+    margin: 3% 5% 3% 5%;
+    text-align: justify;
+}
+
+article {
+    position: relative;
+}
+
+.img_left h3{
+    position: absolute;
+    font-size: 200%;
+    right: 22%;
+    top : 4%;
+}
+
+.img_left p {
+    font-size: 130%;
+    position: absolute;
+    left: 52%;
+    right: 2%;
+    top: 35%;
+}
+
+.img_right h3 {
+    font-size: 200%;
+    position: absolute;
+    left: 22%;
+    top: 4%;
+}
+
+.img_right p {
+    font-size: 130%;
+    position: absolute;
+    right: 52%;
+    left: 2%;
+    top: 35%;
+}
+
+.img_right img {
+    position: relative;
+    left: 50%;
+    top: 10%;
+}
+
+article:hover {
+    margin: 1% 2% 1% 2%;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
