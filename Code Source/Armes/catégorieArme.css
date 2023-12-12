@@ -1,5 +1,9 @@
 /*Pour le header :*/
 
 header #LogoToAccueil{
-    float: right;
+    
+        position: absolute;
+        top: 0;
+        right: 0;
+      
 }
