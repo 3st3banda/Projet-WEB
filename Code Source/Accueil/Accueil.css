@@ -1,0 +1,32 @@
+body{
+    background-image:url(fond_ecran_valorant.jpg);
+    background-repeat: no-repeat; /* Empêche la répétition de l'image */
+    background-size: 100vw 100vh; /* Utilise la largeur et la hauteur de la fenêtre comme taille de l'image */
+    background-attachment: fixed; /* Maintient l'image fixe lors du défilement */
+}
+section{
+    position: relative; /* Définit le positionnement relatif pour le conteneur */
+    background: linear-gradient(45deg,#FF4655 , #111111);
+    padding: 5%;
+    margin-left: 15%;
+    margin-right: 15%;
+    border-radius: 2%;
+}
+h1{
+    text-align: center;
+    text-decoration: solid;
+    color: #FBFBFB;
+}
+
+#homepage{
+    width: 50px; /* Définit une largeur à 50% de la largeur de son conteneur */
+    height: auto; /* Ajuste la hauteur automatiquement pour conserver les proportions de l'image */
+    position: absolute; /* Positionnement absolu pour l'image à l'intérieur du conteneur */
+    top: 2%; /* Place le haut de l'image à 50% du conteneur */
+    left: 5%; /* Place la gauche de l'image à 50% du conteneur */
+}
+
+
+p{
+    color: #FBFBFB;
+}
