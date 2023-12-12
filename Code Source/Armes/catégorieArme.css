@@ -1,7 +1,9 @@
 /*Pour le header :*/
+body{
 
+}
 header{
     
-        float: right;
+        position: right;
       
 }
