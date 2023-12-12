@@ -1,13 +1,8 @@
-﻿/* Construction */
+﻿/* Code */
 
-article{
-    border: solid;
-    border-color: purple;
+body{
+    background: linear-gradient(45deg,#FF4655 , #111111); 
 }
-
-
-/* Code */
-
 
 img {
     width: 50%;
@@ -16,13 +11,17 @@ img {
 }
 
 h2 {
+    font-size: 3vw;
     margin: 5% auto 5% auto;
     width: fit-content;
     border-bottom: 1px solid crimson;
 }
 
+#MapsDescribe {
+    font-size: 1.5vw;
+}
 
-#MapsDescribe, article{
+#MapsDescribe, article {
     margin: 3% 5% 3% 5%;
     text-align: justify;
 }
@@ -31,34 +30,36 @@ article {
     position: relative;
 }
 
-.img_left h3{
+.img_left h3 {
     position: absolute;
-    font-size: 200%;
+    font-size: 3vw;
     right: 22%;
-    top : 4%;
+    top: 4%;
 }
 
 .img_left p {
-    font-size: 130%;
+    font-size: 1.4vw;
     position: absolute;
     left: 52%;
     right: 2%;
     top: 35%;
+    width: 45%;
 }
 
 .img_right h3 {
-    font-size: 200%;
+    font-size: 3vw;
     position: absolute;
     left: 22%;
     top: 4%;
 }
 
 .img_right p {
-    font-size: 130%;
+    font-size: 1.4vw;
     position: absolute;
     right: 52%;
     left: 2%;
     top: 35%;
+    width: 45%;
 }
 
 .img_right img {
@@ -71,10 +72,3 @@ article:hover {
     margin: 1% 2% 1% 2%;
     cursor: pointer;
 }
-
-
-
-
-
-
-
