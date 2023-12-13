@@ -1,5 +1,8 @@
 
-
+/*Pour le body*/
+body{
+    background-image: linear-gradient(to bottom, #111111, #FF4655 );
+}
 
 /*Pour le header :*/
 
@@ -9,13 +12,58 @@ header #LogoAccueil{
 
 header h1{
     font-size: 40px;
+    display: flex;
+    justify-content: left;
+    position: absolute;
 }
 
 header h2{
     font-size: 30px;
+    display: flex;
+    justify-content: right;
 }
+
+/*Pour le main*/
+
+
+main section{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+.types:hover{
+    transform:scale(1.1); 
+}
+
+
 /*pou le footer*/
 
 footer{
     background-color: #4E4E4E;
+}
+
+
+
+
+
+
+/* pour les moove (flexibles et stati bref)*/
+
+
+header{
+    position:relative
+}
+
+nav{
+    position: relative;
+}
+
+main{
+    position: relative;
+}
+
+
+footer{
+    position: relative;
 }
