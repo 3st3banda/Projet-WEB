@@ -18,6 +18,9 @@ body{
     right: 0%;
     bottom: 79%;
     
+    width: 100%; /* La largeur de l'image sera égale à 100% de la largeur de son conteneur */
+    height:auto; /* La hauteur de l'image sera égale à 100% de la hauteur de son conteneur */
+ 
 }
 
 .description{
@@ -39,7 +42,6 @@ body{
     right: 0%;
     bottom: 10%;
 
-    
 }
 
 
@@ -66,8 +68,8 @@ body{
 .images{
     border-style: solid;
     border-color: white;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    margin-left: -5px;
-    margin-right: 5px;
+
+    width: 100%; /* La largeur de l'image sera égale à 100% de la largeur de son conteneur */
+  height: 100%; /* La hauteur de l'image sera égale à 100% de la hauteur de son conteneur */
+  object-fit: cover; /* L'image sera redimensionnée pour remplir complètement son conteneur */
 }
