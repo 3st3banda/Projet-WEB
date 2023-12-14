@@ -11,6 +11,12 @@ body{
     margin: 5px;
     border-style: solid;
 
+    float: center;
+    position: fixed;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 79%;
     
 }
 
