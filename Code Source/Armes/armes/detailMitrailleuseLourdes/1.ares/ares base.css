@@ -1,0 +1,75 @@
+/*Pour le body*/
+body{
+    background-image: linear-gradient(-90deg, #111111, #FF4655 );
+}
+
+.menu{
+    display: flex;
+    justify-content: left;
+    background-color:white ;
+
+    margin: 5px;
+    border-style: solid;
+
+    float: center;
+    position: fixed;
+    top: 10%;
+    left: 0%;
+    right: 0%;
+    bottom: 79%;
+    
+    width: 100%; /* La largeur de l'image sera égale à 100% de la largeur de son conteneur */
+    height:auto; /* La hauteur de l'image sera égale à 100% de la hauteur de son conteneur */
+ 
+}
+
+.description{
+    color: white;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: 30px;
+
+    margin: 5px;
+    border-style: solid;
+
+    text-align: center;
+    justify-content: center;
+    flex-direction: row;
+
+    float: center;
+    position: fixed;
+    top: 20%;
+    left: 20%;
+    right: 0%;
+    bottom: 10%;
+
+    height: fit-content;
+}
+
+
+
+.MenuSecondaire{
+    position: fixed;
+    top: 20%;
+    left: 0%;
+    right: 80%;
+    bottom: 10%;
+
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    justify-content: center;
+    justify-content: space-between;
+
+
+    margin: 5px;
+    border-style: solid;
+
+}
+.images{
+    border-style: solid;
+    border-color: white;
+
+    width: 100%; /* La largeur de l'image sera égale à 100% de la largeur de son conteneur */
+  height: 100%; /* La hauteur de l'image sera égale à 100% de la hauteur de son conteneur */
+  object-fit: cover; /* L'image sera redimensionnée pour remplir complètement son conteneur */
+}
