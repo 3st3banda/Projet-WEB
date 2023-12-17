@@ -57,12 +57,22 @@ body{
     height: auto; /* Pour que la hauteur s'ajuste proportionnellement à la largeur */
     position: relative;top:45%;transform: translate(0%, -50%);
 }
+.marshall img:hover{
+    transform: translate(0%,-50%); /* agrandir l'image de 20% lors du survol */
+    max-width: 120%;
+    width: 120%;
+}
 
 .operator img{
     max-width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
     height: auto; /* Pour que la hauteur s'ajuste proportionnellement à la largeur */
     position: relative;top:50%;transform: translate(0%, -50%);
 
+}
+.operator img:hover{
+    transform: translate(0%,-50%); /* agrandir l'image de 20% lors du survol */
+    max-width: 120%;
+    width: 120%;
 }
 
 .retour img{
@@ -72,7 +82,10 @@ body{
     position: relative; top: 50%; left: 90%;transform: translate(-50%, -50%);
     overflow: hidden;
 }
-
+.retour img:hover{
+    max-width: 120%;
+    width: 12%;
+}
 
 
 .base img{
@@ -81,12 +94,21 @@ body{
     min-width:25% ;
     justify-content: center;
     position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    .base img:hover{
+        max-width: 120%;
+        width: 120%;
+    }
 
 .dégats img{
     min-height: 25%;
     max-width: 100%;/* Pour que l'image ne dépasse pas la largeur du conteneur */
     height: auto; /* Pour que la hauteur s'ajuste proportionnellement à la largeur */
     position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    .dégats img:hover{
+        max-width: 120%;
+        width: 110%;
+    }
+
 
 .skins img{
     min-width: 25%;
@@ -95,7 +117,10 @@ body{
     position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); 
     object-fit:cover;
 }
-
+.skins img:hover{
+    max-width: 120%;
+    width: 40%;
+}
 
 
 .contenu-de-la-page{
