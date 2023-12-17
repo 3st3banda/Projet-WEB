@@ -1,6 +1,6 @@
 .container {  display: grid;
     grid-template-columns: 20% 20% 1fr;
-    grid-template-rows: 20% 1fr 1fr 1fr;
+    grid-template-rows: 15% 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
   }
@@ -55,18 +55,18 @@ body{
 .marshall img{
     max-width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
     height: auto; /* Pour que la hauteur s'ajuste proportionnellement à la largeur */
-    position: relative;top: -10%;
+    position: relative;top:45%;transform: translate(0%, -50%);
 }
 
 .operator img{
     max-width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
     height: auto; /* Pour que la hauteur s'ajuste proportionnellement à la largeur */
-    position: relative;top: 10%;
+    position: relative;top:50%;transform: translate(0%, -50%);
 
 }
 
 .retour img{
-    max-width: 15%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
+    max-width: 10%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
     height: auto; /* Pour que la hauteur s'ajuste proportionnellement à la largeur */
     transform: rotateY(180deg);
     position: relative; top: 50%; left: 90%;transform: translate(-50%, -50%);
@@ -101,7 +101,7 @@ body{
 .contenu-de-la-page{
     color: white;
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-    font-size: auto;
+    font-size: 20px;
 
     
 
