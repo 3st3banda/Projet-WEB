@@ -68,7 +68,16 @@ article {
     top: 10%;
 }
 
+a{
+    color: black;
+}
+
 article:hover {
     margin: 1% 2% 1% 2%;
     cursor: pointer;
+    color: black;
+}
+
+a:active {
+    color: black;
 }
