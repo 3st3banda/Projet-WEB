@@ -9,9 +9,8 @@ body{
     height: 100vh; /* Hauteur de la fenêtre visible */
 }
 
-/* Page du site */
 section{
-    width: 70%;
+    width: 70%; /* Largeur du conteneur */
     background: linear-gradient(45deg, #FF4655, #111111);
     padding: 5%;
     border-radius: 1%;
@@ -35,10 +34,7 @@ header {
       "homepage titre logo"
       "homepage titre logo"
       "homepage titre logo";
-    grid-area:header; 
-}
-
-/* Définie les noms des cellules */
+    grid-area:header; }
 nav { grid-area: nav; }
 main { grid-area: content; }
 footer { grid-area: footer; }
@@ -54,13 +50,16 @@ h1{
     color: #FBFBFB;
 }
 
+
+
 #homelink{
     grid-area: homepage;
     display: flex;
     align-items: center;
     overflow: hidden;
   }
-#homeicon {
+  
+  #homelink #homeicon {
     grid-area: homepage;
     max-width: 50%; /* Ajuste la largeur de l'image à la taille de la cellule */
     max-height: 50%; /* Ajuste la hauteur de l'image à la taille de la cellule */
@@ -70,7 +69,7 @@ h1{
 
 
 
-  
+
 p{
     color: #FBFBFB;
 }
