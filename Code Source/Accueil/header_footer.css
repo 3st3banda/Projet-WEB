@@ -17,7 +17,7 @@ section{
     border-radius: 1%;
     display: grid; 
     grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr 1fr; 
+    grid-template-rows:  repeat(4, auto); 
     gap: 0px 0px; 
     grid-template-areas: 
       "header header header"
@@ -28,49 +28,39 @@ section{
 
 header { 
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 1fr 1fr 1fr; 
+    grid-template-columns: 20% auto 20%; 
+    grid-template-rows: 100%; 
     gap: 0px 0px; 
-    grid-template-areas: 
-      "homepage titre logo"
-      "homepage titre logo"
-      "homepage titre logo";
+    grid-template-areas:"homepage titre logo";
     grid-area:header; 
+    justify-items: center; 
+    align-items: center; 
 }
 
 /* Définie les noms des cellules */
 nav { grid-area: nav; }
 main { grid-area: content; }
 footer { grid-area: footer; }
-#logo { grid-area: logo;}
-#titre { grid-area: titre;}
-
-h1{
-    display: grid;
-    place-items: center;
-    grid-template-columns: auto;
+#logo { grid-area: logo;
+    align-self: center;
+    width: 100%; /* Ajuste la largeur du logo */
+    height: auto; /* Garde la hauteur proportionnelle à la largeur */
+    }
+#titre { grid-area: titre;
+    align-self: center;
     text-align: center;
     text-decoration: solid;
     color: #FBFBFB;
 }
 
-#homelink{
-    grid-area: homepage;
+/* Lien et image pour l'Accueil */
+#homelink {
     display: flex;
+    justify-content: center;
     align-items: center;
-    overflow: hidden;
-  }
-#homeicon {
     grid-area: homepage;
-    max-width: 50%; /* Ajuste la largeur de l'image à la taille de la cellule */
-    max-height: 50%; /* Ajuste la hauteur de l'image à la taille de la cellule */
-    width: auto;
-    height: auto;
-  }
-
-
-
-  
-p{
-    color: #FBFBFB;
+}
+#homeicon {
+    width: 40%;
+    height: 40%;
 }
