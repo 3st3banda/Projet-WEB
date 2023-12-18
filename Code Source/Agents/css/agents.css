@@ -1,52 +1,52 @@
-*{
-    box-sizing: border-box;
-    margin: 2;
-
-}
-
 body {
-	 background: linear-gradient(grey,#ff4655);
+	 background: linear-gradient(#ff4655,#111111);
 }
-
 h1 {
 	font-size: 500%;
 	padding: 0.5rem;
 	text-align: center;
     display: block;
 }
-
-
 #logo{
     height: 50%;
 	width: 0%;
  }
- 
-
 h2 {
 	font-size: 270%;
 	color: rgb(206, 206, 222);
-	
 }
-
+h3 {
+    font-size: 200%;
+    margin: 3px;
+    padding: 0.5rem;
+    text-align: center;
+}
+h3>a:hover {
+    color: #e0cbcb;
+}
+h3 > a {
+        text-decoration: none;
+}
 nav {
 	font-size: 400%;
 }
-
-nav ul{
+nav>ul>li{
+    list-style-type: none;
+    text-align: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background-color: white;
+}
+nav>ul{
     padding: 0px;
     list-style-type: none;
     text-align: center;
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
 }
 
 nav ul li a {
@@ -55,71 +55,33 @@ nav ul li a {
     padding: 1.5rem;
     text-decoration: none;
 }
-
 a {
     text-decoration: none;
 }
-
-a:link {
-	color: black;
+a{
+    color: black;
 }
-
-
-a:hover {
-	color:#f44336
+a:hover{
+    color: red;
 }
-
-a:visited {
-	color: black;
-}
-
-
 img {
 	height: 120px;
-	width: auto;
-    
+	width: auto; 
 }
-
-
-h3 {
-	font-size: 200%;
-	margin: 3px;
-	padding: 0.5rem;
-}
-
-h3>a:hover {
-    color: #e0cbcb;
-}
-
-h3 > a {
-		text-decoration: none;
-}
-
-
 p {
 	margin: 3px;
 	padding: 0.5rem;
 	font-size: 170%;
 	text-align: justify;
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: white;
 }
-
-
 main {
 	display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
 }
-
-
-
-
 .conteneur {
 	height: 100vh;
 	display: grid;
@@ -155,5 +117,59 @@ footer{
     grid-area: Pied;
 }
 
+@media only screen and (768px<=width){
+    main>h2{
+        grid-area: classe;
+    }
+    main{
+        padding: 5%;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto auto auto;
+    grid-row-gap: 30px;
+    grid-template-areas: 
+        "classe classe"
+        "controller_logo controleur"
+        "duellist_logo duelliste"
+        "initiator_logo initiateur"
+        "sentinel_logo sentinelle";
 
-
+    }
+    .controleur{
+        grid-area: controleur;
+    }
+    .controller_logo{
+        grid-area: controller_logo;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .duelliste{
+        grid-area: duelliste;
+    }
+    .duellist_logo{
+        grid-area: duellist_logo;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .initiateur{
+        grid-area: initiateur;
+    }
+    .initiator_logo{
+        grid-area: initiator_logo;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .sentinelle{
+        grid-area: sentinelle;
+    }
+    .sentinel_logo{
+        grid-area: sentinel_logo;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
