@@ -1,0 +1,155 @@
+.container {  
+  display: grid;
+  grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
+  grid-template-rows: auto;
+  gap: 20px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "TitreMap TitreMap TitreMap TitreMap"
+    "Carte Carte Carte Carte"
+    ". DescriptionMap DescriptionMap ."
+    "Titre2 Titre2 Titre2 Titre2"
+    "AttackerSpawn AttackerSpawn DefenderSpawn DefenderSpawn"
+    "Titre3 Titre3 Titre3 Titre3"
+    ". DescriptionSite DescriptionSite ."
+    "SiteA SiteA DescriptionSiteA DescriptionSiteA"
+    "DescriptionSiteB DescriptionSiteB SiteB SiteB"
+    ". InformationSite InformationSite .";
+}
+
+/* Styles pour les écrans de petite taille */
+@media only screen and (max-width: 768px) {
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-areas:
+        "TitreMap"
+        "Carte"
+        "DescriptionMap"
+        "Titre2"
+        "AttackerSpawn"
+        "DefenderSpawn"
+        "Titre3"
+        "DescriptionSite"
+        "SiteA"
+        "DescriptionSiteA"
+        "SiteB"
+        "DescriptionSiteB"
+        "InformationSite";
+    }
+
+    h2 {
+        background-color: #333; /* Fond sombre pour une meilleure lisibilité */
+        color: #fff; /* Texte blanc pour le contraste */
+        padding: 10px; /* Espacement interne pour un look stylisé */
+        border-radius: 5px; /* Bordure arrondie */
+    }
+}
+
+
+
+.TitreMap { 
+    grid-area: TitreMap; 
+}
+
+.Carte { 
+    grid-area: Carte; 
+    width : 30%;
+}
+
+.DescriptionMap { 
+    grid-area: DescriptionMap;
+    text-align: center;
+}
+
+.Titre2 { 
+    grid-area: Titre2; 
+}
+
+.AttackerSpawn { 
+    grid-area: AttackerSpawn; 
+    text-align: center;   
+}
+
+.DefenderSpawn { 
+    grid-area: DefenderSpawn; 
+    text-align: center;
+}
+
+.Titre3 { 
+    grid-area: Titre3; 
+}
+
+.DescriptionSite { 
+    grid-area: DescriptionSite; 
+    font-style: italic;
+    background-color: lightgray; /* Fond gris clair */
+    border: thick double black; /* Bordure grise */
+}
+
+.SiteA { 
+    grid-area: SiteA;
+}
+
+.SiteB { 
+    grid-area: SiteB; 
+}
+
+.DescriptionSiteA { 
+    grid-area: DescriptionSiteA; 
+    padding: 10px;
+    text-align: justify;
+}
+
+.DescriptionSiteB { 
+    grid-area: DescriptionSiteB; 
+    padding: 10px;
+    text-align: justify;
+}
+
+.InformationSite { 
+    grid-area: InformationSite; 
+    font-style: italic;
+    background-color: gray; /* Fond gris clair */
+    padding: 10px; /* Espacement interne pour le contenu */
+    border: thick double black; /* Bordure grise */
+}
+
+body{
+    background: linear-gradient(45deg,#FF4655 , #111111); 
+}
+
+h3 {
+    text-align: center;
+}
+
+img {
+    width : 100%;
+    height : 80%;
+    border-radius: 30px;
+}
+
+h2 {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 2em;
+    color: #ffffff; /* Texte en blanc pour un fond en dégradé */
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+h2::after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50%;
+    height: 2px;
+    background-color: whitesmoke; /* Soulignage blanc pour un fond en dégradé */
+}
+
+*{
+    justify-items: center;
+    align-self: center;
+}
