@@ -98,14 +98,24 @@
 
 .DescriptionSiteA { 
     grid-area: DescriptionSiteA; 
-    padding: 10px;
+    padding: 5px;
     text-align: justify;
+    border: solid 5px;
+    padding: 45px;
+    border-radius: 0% 100% 2% 98% / 77% 9% 91% 23%;
+    font-size: 90%;
+    background-color: #A36565;
 }
 
 .DescriptionSiteB { 
     grid-area: DescriptionSiteB; 
     padding: 10px;
     text-align: justify;
+    border: solid 5px;
+    padding: 45px;
+    border-radius: 100% 0% 98% 2% / 9% 77% 23% 91%;
+    font-size: 90%;
+    background-color: #A36565;
 }
 
 .InformationSite { 
