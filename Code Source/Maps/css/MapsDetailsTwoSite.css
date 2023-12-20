@@ -30,10 +30,10 @@
         "DefenderSpawn"
         "Titre3"
         "DescriptionSite"
-        "SiteA"
         "DescriptionSiteA"
-        "SiteB"
+        "SiteA"
         "DescriptionSiteB"
+        "SiteB"
         "InformationSite";
     }
 
@@ -70,6 +70,7 @@
     text-align: center;   
 }
 
+
 .DefenderSpawn { 
     grid-area: DefenderSpawn; 
     text-align: center;
@@ -84,6 +85,7 @@
     font-style: italic;
     background-color: lightgray; /* Fond gris clair */
     border: thick double black; /* Bordure grise */
+    padding: 5px;
 }
 
 .SiteA { 
@@ -152,4 +154,25 @@ h2::after {
 *{
     justify-items: center;
     align-self: center;
+}
+
+.DefenderSpawn p, .AttackerSpawn p {
+    font-family: 'Helvetica', sans-serif;
+    font-size: 1em;
+    color: lightgray; /* Texte en blanc pour un fond en dégradé */
+    text-align: center;
+    margin-bottom: 10px;
+    position: relative;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.DefenderSpawn p::after, .AttackerSpawn p::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 15%;
+    height: 2px;
+    background-color: whitesmoke; /* Soulignage blanc pour un fond en dégradé */
 }
