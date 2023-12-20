@@ -159,7 +159,7 @@ h2::after {
 .DefenderSpawn p, .AttackerSpawn p {
     font-family: 'Helvetica', sans-serif;
     font-size: 1em;
-    color: lightgray; /* Texte en blanc pour un fond en dégradé */
+    color: black; /* Texte en blanc pour un fond en dégradé */
     text-align: center;
     margin-bottom: 10px;
     position: relative;
@@ -174,5 +174,5 @@ h2::after {
     transform: translateX(-50%);
     width: 15%;
     height: 2px;
-    background-color: whitesmoke; /* Soulignage blanc pour un fond en dégradé */
+    background-color: black; /* Soulignage blanc pour un fond en dégradé */
 }
