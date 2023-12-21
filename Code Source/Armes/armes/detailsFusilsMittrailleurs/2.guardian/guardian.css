@@ -1,8 +1,9 @@
 .container {  display: grid;
-    grid-template-columns: 20% 20% 1fr;
+    grid-template-columns: 20% 1fr 25%;
     grid-template-rows: 15% 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
+    
   }
   
   .armes-de-la-catégorie { grid-area: 1 / 1 / 2 / 4; }
@@ -11,9 +12,9 @@
   
   .contenu-de-la-page { grid-area: 2 / 2 / 5 / 4; }
   
-  .couteau { grid-area: 1 / 1 / 2 / 2; }
+  .guardian { grid-area: 1 / 1 / 2 / 2; }
   
-  .marshall { grid-area: 1 / 2 / 2 / 3; }
+  .autre { grid-area: 1 / 2 / 2 / 3; }
   
   .base { grid-area: 2 / 1 / 3 / 2; }
   
@@ -52,25 +53,37 @@ body{
     border-style: solid;
 }
 
+.autre{
+    display: flex;
+    justify-content: space-around; /* ou une autre valeur de votre choix, comme 'space-between' */
+}
+.retour{
+    display: flex;
+    justify-content: space-around; /* ou une autre valeur de votre choix, comme 'space-between' */
+    min-width: 70%;
+}
 
-.marshall img{
+.autre img{
     max-width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
     height: auto; /* Pour que la hauteur s'ajuste proportionnellement à la largeur */
-    position: relative;top:45%;transform: translate(15%, -50%);
+    position:relative;top:45%;transform: translate(15%, -50%);
+
 }
-.marshall img:hover{
+.autre img:hover{
     transform: translate(0%,-50%); /* agrandir l'image de 20% lors du survol */
     max-width: 120%;
     width: 120%;
+    display: flex;
+    flex-direction: row;
 }
 
-.couteau img{
+.guardian img{
     max-width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
     height: auto; /* Pour que la hauteur s'ajuste proportionnellement à la largeur */
     position: relative;top:50%;transform: translate(0%, -50%);
 
 }
-.couteau img:hover{
+.guardian img:hover{
     transform: translate(0%,-50%); /* agrandir l'image de 20% lors du survol */
     max-width: 120%;
     width: 120%;
@@ -148,3 +161,4 @@ body{
 
 
  }
+
