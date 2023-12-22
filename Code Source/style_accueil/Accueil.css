@@ -1,6 +1,6 @@
 /* Fond d'écran du site */
 body{
-  background-image:url(fond_ecran_valorant.jpg);
+  background-image:url(../images_accueil/fond_ecran_valorant.jpg);
   background-repeat: no-repeat; /* Empêche la répétition de l'image */
   background-size: 100vw 100vh; /* Utilise la largeur et la hauteur de la fenêtre comme taille de l'image */
   background-attachment: fixed; /* Maintient l'image fixe lors du défilement */
@@ -153,6 +153,10 @@ footer{
       "LOGO Titre Version"
       "contacter Sources Sites-Officiel";
 }
+
+.textefoot{
+  font-size: 100%;
+}
     
 .LOGO { grid-area: LOGO;
   align-self: center;
@@ -180,12 +184,19 @@ footer{
   0 0 10px #FBFBFB; 
 }
 
-.contacter { grid-area: contacter; }
+.contacter { grid-area: contacter;
+border-right: 2px #111111 solid;
+padding: 2%;
+}
 
 .Sources { grid-area: Sources; 
-  border-left : 1px #111111 solid;
-  padding : 30%;
-  border-right: 1px #111111 solid;
+  border-right: 2px #111111 solid;
+  padding: 17%;
+  padding-left: 5%;
+}
+.linkwikis{
+  text-decoration: none;
+  color: #FBFBFB;
 }
 
 .Sites-Officiel { grid-area: Sites-Officiel; 
@@ -265,9 +276,7 @@ nav li{
   section{
       width: 100%;
       background: linear-gradient(45deg, #FF4655, #111111);
-      margin: 5%;
       padding: 5%;
-      padding-bottom: 0%;
       border-radius: 1%;
       border-bottom-left-radius: 0%;
       border-bottom-right-radius: 0%;
@@ -280,6 +289,10 @@ nav li{
         "nav nav nav"
         "content content content"; 
         grid-area: section;
+  }
+
+  footer{
+    width: 100%;
   }
   
 }
