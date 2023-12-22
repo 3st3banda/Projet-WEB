@@ -53,26 +53,15 @@ body{
 }
 
 
-.marshall img{
-    max-width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
-    height: auto; /* Pour que la hauteur s'ajuste proportionnellement à la largeur */
-    position: relative;top:45%;transform: translate(15%, -50%);
-}
-.marshall img:hover{
-    transform: translate(0%,-50%); /* agrandir l'image de 20% lors du survol */
-    max-width: 120%;
-    width: 120%;
-}
-
 .couteau img{
-    max-width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
+    max-width: 90%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
     height: auto; /* Pour que la hauteur s'ajuste proportionnellement à la largeur */
     position: relative;top:50%;transform: translate(0%, -50%);
 
 }
 .couteau img:hover{
     transform: translate(0%,-50%); /* agrandir l'image de 20% lors du survol */
-    max-width: 120%;
+    max-width: 95%;
     width: 120%;
 }
 
@@ -96,7 +85,7 @@ body{
     position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); }
     .base img:hover{
         max-width: 120%;
-        width: 100%;
+        width: 95%;
     }
 
 

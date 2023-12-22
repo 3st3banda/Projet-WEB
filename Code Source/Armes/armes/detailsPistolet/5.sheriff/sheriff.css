@@ -112,6 +112,18 @@ body{
         width: 100%;
     }
 
+    .arme1{
+        width: 48%;
+    }
+    .arme1 :hover{
+        width: 50%;
+    }
+    .arme4{
+        width: 48%;
+    }
+    .arme4 :hover{
+        width: 50%;
+    }
 
 .dégats img{
     min-height: 25%;

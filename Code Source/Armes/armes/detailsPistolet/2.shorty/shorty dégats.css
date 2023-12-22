@@ -1,6 +1,6 @@
 .container {  display: grid;
     grid-template-columns: 20% 1fr 25%;
-    grid-template-rows: 15% 1fr 1fr 1fr;
+    grid-template-rows: 18% 1fr 1fr 1fr;
     gap: 0px 0px;
     grid-auto-flow: row;
   }
@@ -120,6 +120,18 @@ body{
         width: 110%;
     }
 
+    .arme1{
+        width: 48%;
+    }
+    .arme1 :hover{
+        width: 50%;
+    }
+    .arme4{
+        width: 48%;
+    }
+    .arme4 :hover{
+        width: 50%;
+    }
 
 .skins img{
     min-width: 25%;

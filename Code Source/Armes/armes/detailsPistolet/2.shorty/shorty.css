@@ -123,7 +123,18 @@ body{
         width: 110%;
     }
 
-
+.arme1{
+    width: 48%;
+}
+.arme1 :hover{
+    width: 50%;
+}
+.arme4{
+    width: 48%;
+}
+.arme4 :hover{
+    width: 50%;
+}
 .skins img{
     min-width: 25%;
     max-width: 10000%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
