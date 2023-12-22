@@ -106,7 +106,7 @@
     border: solid 5px; /* Bordure de taille 5px */
     padding: 45px; /* Bordure interne */
     border-radius: 0% 100% 2% 98% / 77% 9% 91% 23%; /*Mise en forme de la bordure*/
-    font-size: 1em; /* Taille du texte */
+    font-size: 75%; /* Taille du texte */
     background-color: #A36565; /* Fond saumon foncé */
 }
 
@@ -116,7 +116,7 @@
     border: solid 5px; /* Bordure de taille 5px */
     padding: 45px; /* Bordure interne */
     border-radius: 100% 0% 98% 2% / 9% 77% 23% 91%; /*Mise en forme de la bordure*/
-    font-size: 1em; /* Taille du texte */
+    font-size: 75%; /* Taille du texte */
     background-color: #A36565; /* Fond saumon foncé */
 }
 
