@@ -1,6 +1,25 @@
   body {
     margin: 0;
     padding: 0;
+    display: grid; /* Utilisation de display grid pour le corps de la page */
+      place-items: center; /* Centre le contenu dans le corps */
+    grid-template-areas: "header"
+    "nav"
+      "main"
+      "footer";
+  }
+
+nav{
+  grid-area: nav;
+}
+header{
+  grid-area: header;
+}
+main{
+  grid-area: main;
+}
+footer{
+  grid-area: footer;
 }
   /* Barre de navigation horizontale */
   .container {
