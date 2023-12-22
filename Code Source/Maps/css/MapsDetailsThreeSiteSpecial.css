@@ -1,4 +1,4 @@
-/* Définition de la mise en page en grille 13x4 */
+/* Définition de la mise en page en grille 14x4 */
 .container {  
   display: grid;
   grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
@@ -15,6 +15,7 @@
     ". DescriptionSite DescriptionSite ."
     "SiteA SiteA DescriptionSiteA DescriptionSiteA"
     "DescriptionSiteB DescriptionSiteB SiteB SiteB"
+    "SiteC SiteC DescriptionSiteC DescriptionSiteC"
     ". InformationSite InformationSite ."
     "TitreSpecial TitreSpecial TitreSpecial TitreSpecial"
     ". DescriptionSpecial DescriptionSpecial ."
@@ -23,7 +24,7 @@
 
 /* Styles pour les écrans de petite taille */
 @media only screen and (max-width: 768px) {
-    /* Définition de la mise en page en grille 15x2 */
+    /* Définition de la mise en page en grille 17x2 */
     .container {
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
@@ -38,6 +39,8 @@
         "SiteA SiteA"
         "DescriptionSiteB DescriptionSiteB"
         "SiteB SiteB"
+        "DescriptionSiteC DescriptionSiteC"
+        "SiteC SiteC"
         "InformationSite InformationSite"
         "TitreSpecial TitreSpecial"
         "DescriptionSpecial DescriptionSpecial"
@@ -106,6 +109,10 @@
     grid-area: SiteB; 
 }
 
+.SiteC{
+    grid-area: SiteC;
+}
+
 .DescriptionSiteA { 
     grid-area: DescriptionSiteA; 
     text-align: justify; /* Définition du style de texte en justifié */
@@ -122,6 +129,16 @@
     border: solid 5px; /* Bordure de taille 5px */
     padding: 45px; /* Bordure interne */
     border-radius: 100% 0% 98% 2% / 9% 77% 23% 91%; /*Mise en forme de la bordure*/
+    font-size: 1em; /* Taille du texte */
+    background-color: #A36565; /* Fond saumon foncé */
+}
+
+.DescriptionSiteC { 
+    grid-area: DescriptionSiteC; 
+    text-align: justify; /* Définition du style de texte en justifié */
+    border: solid 5px; /* Bordure de taille 5px */
+    padding: 45px; /* Bordure interne */
+    border-radius: 0% 100% 2% 98% / 77% 9% 91% 23%; /*Mise en forme de la bordure*/
     font-size: 1em; /* Taille du texte */
     background-color: #A36565; /* Fond saumon foncé */
 }
@@ -155,6 +172,7 @@
     grid-area: ImageSpecial2;
     text-align: center; /* Alignement vers le centre */
 }
+
 
 /* Applique ces styles à tous les éléments de la page */
 *{
