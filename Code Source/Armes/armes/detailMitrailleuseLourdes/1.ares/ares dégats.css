@@ -129,7 +129,7 @@ body{
     font-size: 30px;
 
     margin-left: auto;
-    margin-right: auto;
+    margin-right: auto; /*placement spcifique pour tableau en html, car cela ne convenais pas au meme qualificatif que le reste*/
 
 
  }

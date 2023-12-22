@@ -4,7 +4,7 @@
     gap: 0px 0px;
     grid-auto-flow: row;
   }
-  
+  /*placement des zones*/
   .armes-de-la-catégorie { grid-area: 1 / 1 / 2 / 4; }
   
   .catégories { grid-area: 2 / 1 / 5 / 2; }
@@ -43,7 +43,7 @@ body{
 
 .catégories{
     display: flex;
-    justify-content: left;
+    justify-content: left; /*positionnement du contenu à gauche*/
     background-color:white ;
 
 
@@ -67,11 +67,11 @@ body{
 .odin img{
     max-width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
     height: auto; /* Pour que la hauteur s'ajuste proportionnellement à la largeur */
-    position: relative;top:50%;transform: translate(0%, -50%);
+    position: relative;top:50%;transform: translate(0%, -50%); /* pour le positionnement des images de odin*/
 
 }
 .odin img:hover{
-    transform: translate(0%,-50%); /* agrandir l'image de 20% lors du survol */
+    transform: translate(0%,-50%); /* pour le positionnement des imagesde odin en hover */
     max-width: 120%;
     width: 120%;
 }
@@ -79,8 +79,8 @@ body{
 .retour img{
     max-width: 10%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
     height: auto; /* Pour que la hauteur s'ajuste proportionnellement à la largeur */
-    transform: rotateY(180deg);
-    position: relative; top: 50%; left: 90%;transform: translate(-50%, -50%);
+    transform: rotateY(180deg); /*tourner l'image (mise a l'envers de l'axe horizontal)*/
+    position: relative; top: 50%; left: 90%;transform: translate(-50%, -50%); 
     overflow: hidden;
 }
 .retour img:hover{
@@ -93,7 +93,7 @@ body{
     height: auto; /* Pour que la hauteur s'ajuste proportionnellement à la largeur */
     min-width:25% ;
     justify-content: center;
-    position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); }
+    position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); } /*placement de l'image de base, ici une ares*/
     .base img:hover{
         max-width: 120%;
         width: 100%;
@@ -133,7 +133,7 @@ body{
     
 
     text-align: center;
-    justify-content: center;
+    justify-content: center;     /*placement du texte dans le div, alignement horizontal, centrer*/
     flex-direction: row;
 
     float: center;
@@ -142,9 +142,16 @@ body{
     height: auto;
     word-wrap: break-word;
   overflow-wrap: break-word; /* Le texte fera un passage à la ligne lorsque cela est nécessaire pour s'adapter à la largeur */
-  position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%);
+  position: relative; top: 50%; left: 50%; transform: translate(-50%, -50%); /*posiitonnement du texte*/
 
   display: table;
 
 
  }
+
+ /*Puisque toute les pages css se ressemblent (en fonction de leur nom, les pages sont plus ou moins les
+ memes, degats ares presque egae a degats odin*/
+
+ /*en ce qui concerne les pages hmtl, rien ne change a l'exception des liens et des images qui bougent respectivement*/
+ /*en fonction de leur place dans la catégories auquels ils appartiennent, cette page est donc avec ares dégats.css et catégorieArme.css*/
+ /* représentative du presque ensemble des balises utilisé dans toute le dossier arme*/

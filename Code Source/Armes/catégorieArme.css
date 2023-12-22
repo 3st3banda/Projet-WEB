@@ -8,7 +8,7 @@
       "plan-central plan-central plan-central "
       "plan-inférieur plan-inférieur plan-inférieur";
   }
-  
+  /* positionnement de la grille*/
   .plan-supérieur { grid-area: plan-supérieur; }
   
   .plan-inférieur { grid-area: plan-inférieur; }
@@ -20,17 +20,17 @@
 }
 
 .plan-supérieur{
-    display: flex;
+    display: flex;                  /*placement des images-lien des 3 premières catégories*/
     justify-content: space-around; /* ou une autre valeur de votre choix, comme 'space-between' */
 }
 .plan-central{
-    display: flex;
+    display: flex;                  /* placement des images-lien des 4 dernières catégories*/
     justify-content: space-around; /* ou une autre valeur de votre choix, comme 'space-between' */
 }
 
 .plan-inférieur{
     border: white;
-    border-style: solid;
+    border-style: solid;                /*style du texte*/
     border-radius: 5%;
     text-align: center;
 }
