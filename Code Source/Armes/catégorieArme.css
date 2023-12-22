@@ -1,69 +1,36 @@
-
-/*Pour le body*/
-body{
-    background-image: linear-gradient(to bottom, #111111, #FF4655 );
+.container {  display: grid;
+    grid-template-columns: 15% 1fr 20%;
+    grid-template-rows: 1fr 1fr 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+      "plan-supérieur plan-supérieur plan-supérieur"
+      "plan-central plan-central plan-central "
+      "plan-inférieur plan-inférieur plan-inférieur";
+  }
+  
+  .plan-supérieur { grid-area: plan-supérieur; }
+  
+  .plan-inférieur { grid-area: plan-inférieur; }
+  
+  .plan-central { grid-area: plan-central; }
+  
+  body{
+    background-image: linear-gradient(-90deg, #111111, #FF4655 );
 }
 
-/*Pour le header :*/
-
-header #LogoAccueil{
-    float: right;
-}
-
-header h1{
-    font-size: 40px;
+.plan-supérieur{
     display: flex;
-    justify-content: left;
-    position: absolute;
+    justify-content: space-around; /* ou une autre valeur de votre choix, comme 'space-between' */
 }
-
-header h2{
-    font-size: 30px;
+.plan-central{
     display: flex;
-    justify-content: right;
+    justify-content: space-around; /* ou une autre valeur de votre choix, comme 'space-between' */
 }
 
-/*Pour le main*/
-
-
-main section{
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.types:hover{
-    transform:scale(1.1); 
-}
-
-
-/*pou le footer*/
-
-footer{
-    background-color: #4E4E4E;
-}
-
-
-
-
-
-
-/* pour les moove (flexibles et stati bref)*/
-
-
-header{
-    position:relative
-}
-
-nav{
-    position: relative;
-}
-
-main{
-    position: relative;
-}
-
-
-footer{
-    position: relative;
+.plan-inférieur{
+    border: white;
+    border-style: solid;
+    border-radius: 5%;
+    text-align: center;
 }
