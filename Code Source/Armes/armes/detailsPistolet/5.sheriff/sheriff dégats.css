@@ -11,7 +11,7 @@
   
   .contenu-de-la-page { grid-area: 2 / 2 / 5 / 4; }
   
-  .vandal { grid-area: 1 / 1 / 2 / 2; }
+  .sheriff { grid-area: 1 / 1 / 2 / 2; }
   
   .autre { grid-area: 1 / 2 / 2 / 3; }
   
@@ -74,13 +74,13 @@ body{
     width: 120%;
 }
 
-.vandal img{
+.sheriff img{
     max-width: 100%; /* Pour que l'image ne dépasse pas la largeur du conteneur */
     height: auto; /* Pour que la hauteur s'ajuste proportionnellement à la largeur */
     position: relative;top:50%;transform: translate(0%, -50%);
 
 }
-.vandal img:hover{
+.sheriff img:hover{
     transform: translate(0%,-50%); /* agrandir l'image de 20% lors du survol */
     max-width: 120%;
     width: 120%;
