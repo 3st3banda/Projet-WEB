@@ -57,6 +57,11 @@
         padding: 10px; /* Espacement interne */
         border-radius: 5px; /* Bordure arrondie */
     }
+
+    /* Souslignement des titres h2 sur les petits écrans */
+    h2::after {
+    height: 1px; /* Hauteur du souslignage */
+    }
 }
 
 
