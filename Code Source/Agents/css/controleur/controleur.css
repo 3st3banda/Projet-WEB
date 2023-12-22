@@ -1,8 +1,7 @@
   body {
     margin: 0;
     padding: 0;
-  }
-
+}
   /* Barre de navigation horizontale */
   .container {
     overflow-x: scroll;  /* Permet le défilement horizontal  */
