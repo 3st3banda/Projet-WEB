@@ -249,3 +249,37 @@ nav li{
     color: #FBFBFB;
     font-weight: bold;
 }
+
+@media screen and  (max-width: 900px){
+    body{
+        display: grid; /* Utilisation de display grid pour le corps de la page */
+        place-items: center; /* Centre le contenu dans le corps */
+        height: 100vh; /* Hauteur de la fenêtre visible */
+        grid-template-columns: 1fr; 
+        grid-template-rows:  repeat(2, auto); 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "section"
+          "footer";
+    }
+    section{
+        width: 100%;
+        background: linear-gradient(45deg, #FF4655, #111111);
+        margin: 5%;
+        padding: 5%;
+        padding-bottom: 0%;
+        border-radius: 1%;
+        border-bottom-left-radius: 0%;
+        border-bottom-right-radius: 0%;
+        display: grid; 
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-template-rows:  repeat(4, auto); 
+        gap: 0px 0px; 
+        grid-template-areas: 
+          "header header header"
+          "nav nav nav"
+          "content content content"; 
+          grid-area: section;
+    }
+    
+}
