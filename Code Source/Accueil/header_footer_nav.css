@@ -35,6 +35,9 @@ section{
       grid-area: section;
 }
 
+p{
+    color: #FBFBFB;
+}
 header { 
     display: grid; 
     grid-template-columns: 20% auto 20%; 
@@ -79,6 +82,7 @@ footer { grid-area: footer; }
 
 /* Navigation */
 .agents{
+    transition-duration: 5ms;
     font-size: 125%;
     text-decoration: none;
     color: #FBFBFB;
@@ -86,6 +90,7 @@ footer { grid-area: footer; }
     0 0 10px #FBFBFB;
 }
 .armes{
+    transition-duration: 5ms;
     font-size: 125%;
     text-decoration: none;
     color: #FBFBFB;
@@ -94,6 +99,7 @@ footer { grid-area: footer; }
 }
 
 .boutique{
+    transition-duration: 5ms;
     font-size: 125%;
     text-decoration: none;
     color: #FBFBFB;
@@ -102,6 +108,7 @@ footer { grid-area: footer; }
 }
 
 .maps{
+    transition-duration: 5ms;
     font-size: 125%;
     text-decoration: none;
     color: #FBFBFB;
@@ -201,5 +208,44 @@ footer{
   .Riot { grid-area: Riot; } 
 
       
+/* Animations */
+nav li{
+    list-style: none;
+}
+
+.sub_menu_agents {
+    display: none;
+    position: absolute;
+    background: linear-gradient(#FF4655, #111111); /* Couleur de fond du sous-menu */
+    padding: 2%;
+    border-radius: 5%; /* Pour arrondir les coins du sous-menu */
+}
+
+.barre li:hover .sub_menu_agents {
+    display: block;
+}
+
+.sub_menu_agents > li > a{
+    text-decoration: none;
+    color: #FBFBFB;
+    font-weight: bold;
+}
 
 
+.sub_menu_armes {
+    display: none;
+    position: absolute;
+    background: linear-gradient(#FF4655, #111111); /* Couleur de fond du sous-menu */
+    padding: 2%;
+    border-radius: 5%; /* Pour arrondir les coins du sous-menu */
+}
+
+.barre li:hover .sub_menu_armes {
+    display: block;
+}
+
+.sub_menu_armes > li > a{
+    text-decoration: none;
+    color: #FBFBFB;
+    font-weight: bold;
+}
