@@ -44,11 +44,6 @@
             "Lotus Lotus Lotus"
             "Sunset Sunset Sunset";
     }
-    
-    /* Style de la description sur les petits écras */
-    .Description { 
-        text-align: justify; /* Définition du style de texte en justifié */
-    }
 
     /* Style pour les éléments h2 sur les petits écrans */
     h2 {
@@ -70,9 +65,10 @@
 
 .Description { 
     grid-area: Description; 
+    text-align: justify; /* Définition du style de texte en justifié */
     background-color: gray; /* Fond gris clair */
     border: thick double black; /* Bordure grise */
-    padding: 2px; /* Marge interne */
+    padding: 15px; /* Marge interne */
 }
 
 .Titre2 { grid-area: Titre2; }
