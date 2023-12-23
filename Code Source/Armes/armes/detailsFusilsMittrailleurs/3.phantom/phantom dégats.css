@@ -349,6 +349,7 @@ nav li{
 
 .barre li:hover .sub_menu_agents {
     display: block;
+    z-index: 5;
 }
 
 .sub_menu_agents > li > a{
@@ -368,6 +369,7 @@ nav li{
 
 .barre li:hover .sub_menu_armes {
     display: block;
+    z-index: 5;
 }
 
 .sub_menu_armes > li > a{
