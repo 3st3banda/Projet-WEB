@@ -1,4 +1,4 @@
-/* Définition de la mise en page en grille 11x4 */
+/* Définition de la mise en page en grille 14x4 */
 .container {  
   display: grid;
   grid-template-columns: 0.5fr 1.5fr 1.5fr 0.5fr;
@@ -6,6 +6,8 @@
   gap: 20px 10px;
   grid-auto-flow: row;
   grid-template-areas:
+    "Header Header Header Header"
+    "Nav Nav Nav Nav"
     "TitreMap TitreMap TitreMap TitreMap"
     "Carte Carte Carte Carte"
     ". DescriptionMap DescriptionMap ."
@@ -16,15 +18,18 @@
     "SiteA SiteA DescriptionSiteA DescriptionSiteA"
     "DescriptionSiteB DescriptionSiteB SiteB SiteB"
     "SiteC SiteC DescriptionSiteC DescriptionSiteC"
-    ". InformationSite InformationSite .";
+    ". InformationSite InformationSite ."
+    "Footer Footer Footer Footer";
 }
 
 /* Styles pour les écrans de petite taille */
 @media only screen and (max-width: 768px) {
-    /* Définition de la mise en page en grille 14x2 */
+    /* Définition de la mise en page en grille 17x2 */
     .container {
       grid-template-columns: 1fr 1fr;
       grid-template-areas:
+        "Header Header"
+        "Nav Nav"
         "TitreMap TitreMap"
         "Carte Carte"
         "DescriptionMap DescriptionMap"
@@ -38,7 +43,8 @@
         "SiteB SiteB"
         "DescriptionSiteC DescriptionSiteC"
         "SiteC SiteC"
-        "InformationSite InformationSite";
+        "InformationSite InformationSite"
+        "Footer Footer";
     }
 
     /* Style pour les éléments h2 sur les petits écrans */
@@ -180,7 +186,7 @@ h2::after {
 }
 
 /* Style pour les titres de niveau h3 */
-h3 {
+main h3 {
     font-size: 1em; /* Taille du texte */
     text-align: center; /* Alignement vers le centre */
 }
