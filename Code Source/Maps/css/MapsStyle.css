@@ -1,4 +1,4 @@
-﻿/* Définition de la mise en page en grille 13x3 */
+﻿/* Définition de la mise en page en grille 16x3 */
 .container {  
     display: grid;
     grid-template-columns: auto;
@@ -26,6 +26,7 @@
 
 /* Styles pour les écrans de petite taille */
 @media only screen and (max-width: 768px) {
+    /* Définition de la mise en page en grille 16x4 */
     .container {  
         display: grid;
         grid-template-columns: auto;
@@ -134,8 +135,8 @@ h2::after {
     background-color: whitesmoke; /* Soulignage blanc pour un fond en dégradé */
 }
 
-/* Style pour les titres h3 */
-h3 {
+/* Style pour les titres h3 du main*/
+main h3 {
     font-family: 'Helvetica', sans-serif; /* Police d'écriure */
     font-size: 4vh; /* Taille du texte */
     color: black; /* Texte en noir */
@@ -144,8 +145,8 @@ h3 {
     position: relative; /* Définition d'un positionnement relative */
 }
 
-/* Souslignement des titres h3 */
-h3::after {
+/* Souslignement des titres h3 du main */
+main h3::after {
     content: ""; /* Contenu vide pour créer l'élément de souslignage */
     position: absolute; /* Définition d'un positionnement absolue */
     bottom: 0; /* Positionnement au bas de l'élément parent */
@@ -226,7 +227,7 @@ a:active {
 /* ---------------- */
 
 
-p{
+footer p{
     color: #FBFBFB;
 }
 header { 
@@ -238,15 +239,15 @@ header {
     grid-template-rows: 100%; 
     gap: 0px 0px; 
     grid-template-areas:"homepage titre logo";
-    grid-area:header; 
+    grid-area:Header; 
     justify-items: center; 
     align-items: center; 
 }
 
 /* Définie les noms des cellules */
-nav { grid-area: nav;}
+nav { grid-area: Nav;}
 main { grid-area: content;}
-footer { grid-area: footer; }
+footer { grid-area: Footer; }
 .logo { grid-area: logo;
     align-self: center;
     width: 100%; /* Ajuste la largeur du logo */
@@ -428,6 +429,7 @@ nav li{
 
 .barre li:hover .sub_menu_agents {
     display: block;
+    z-index: 5;
 }
 
 .sub_menu_agents > li > a{
@@ -447,6 +449,7 @@ nav li{
 
 .barre li:hover .sub_menu_armes {
     display: block;
+    z-index: 5;
 }
 
 .sub_menu_armes > li > a{
